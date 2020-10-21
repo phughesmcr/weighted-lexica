@@ -132,8 +132,11 @@ export class Lexicon {
 
   //#endregion Categories
 
-  /** Serialize this lexicon to a JSON string. */
-  stringify(): string {
+  /**
+   * Serialize this lexicon into a json string
+   * @param space whitespace control
+   */
+  stringify(space?: number | string): string {
     const cats: { [category: string]: string } = {};
     this._categories.forEach((category, name) => {
       cats[name] = category.stringify();
@@ -146,7 +149,7 @@ export class Lexicon {
       name: this.name,
       categories: cats,
       terms: terms,
-    });
+    }, null, space);
   }
 
   /** Get lexical values for a given token array. */

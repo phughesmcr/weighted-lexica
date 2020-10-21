@@ -103,7 +103,6 @@ export class Category {
   stringify(): string {
     return JSON.stringify({
       name: this.name,
-      lexicon: this.lexicon.name,
       intercept: this.intercept,
       terms: this.terms.map((term: Term) => {
         return term.term;
