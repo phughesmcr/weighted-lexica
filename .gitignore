@@ -1,6 +1,7 @@
 build/
 dist/
 node_modules/
+types/
 .env
 package-lock.json
 test/scratch.js

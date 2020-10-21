@@ -1,8 +1,8 @@
-.vscode
-src
-test
-docs
-
+.vscode/
+src/
+test/
+docs/
+types/
 .browserlistrc
 .editorconfig
 .eslintignore
@@ -12,8 +12,7 @@ docs
 .mocharc.json
 babel.config.json
 jsconfig.json
-rollup.config.dist.js
-rollup.config.build.js
+rollup.config.js
 tsconfig.json
 tsconfig.testing.json
 test/scratch.js
