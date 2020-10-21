@@ -16,8 +16,8 @@ export default [
     input: './src/lexicon.ts',
 
     // https://rollupjs.org/guide/en#external-e-external
-    // external: [],
-    external: (id) => !/^[./]/.test(id),
+    external: [],
+    // external: (id) => !/^[./]/.test(id),
 
     plugins: [
       // Allows node_modules resolution
@@ -50,7 +50,8 @@ export default [
   {
     input: './src/lexicon.ts',
 
-    external: (id) => !/^[./]/.test(id),
+    external: [],
+    // external: (id) => !/^[./]/.test(id),
 
     treeshake: {
       moduleSideEffects: false,
