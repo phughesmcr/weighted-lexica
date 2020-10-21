@@ -23,7 +23,13 @@ export default {
     commonjs(),
 
     // Compile TypeScript/JavaScript files
-    typescript(),
+    typescript({
+      include: [ "*.ts+(|x)", "**/*.ts+(|x)", "*.js+(|x)", "**/*.js+(|x)" ],
+      exclude: [ "node_modules" ],
+      clean: true,
+      typescript: require("typescript"),
+      useTsconfigDeclarationDir: true,
+    }),
   ],
 
   output: {

@@ -9,7 +9,6 @@ const extensions = [
 
 const name = "Lexica";
 
-
 export default {
   input: './src/lexicon.ts',
 
