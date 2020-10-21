@@ -20,7 +20,7 @@ export default {
     resolve({ extensions }),
 
     // Allow bundling cjs modules. Rollup doesn't understand cjs
-    commonjs(),
+    commonjs({ include: 'node_modules/**' }),
 
     // Compile TypeScript/JavaScript files
     typescript({
@@ -28,12 +28,13 @@ export default {
       exclude: [ "node_modules" ],
       clean: true,
       typescript: require("typescript"),
+      tslib: require('tslib'),
       useTsconfigDeclarationDir: true,
     }),
   ],
 
   output: {
-    file: "build/lexicon.js",
+    file: pkg.jsnext,
     format: "es",
     sourcemap: true,
   },

@@ -15,12 +15,16 @@ export default {
   // https://rollupjs.org/guide/en#external-e-external
   external: [],
 
+  treeshake: {
+    moduleSideEffects: false,
+  },
+
   plugins: [
     // Allows node_modules resolution
     resolve({ extensions }),
 
     // Allow bundling cjs modules. Rollup doesn't understand cjs
-    commonjs(),
+    commonjs({ include: 'node_modules/**' }),
 
     // Compile TypeScript/JavaScript files
     babel({
@@ -35,13 +39,16 @@ export default {
     file: pkg.main,
     format: 'umd',
     name,
+    sourcemap: 'inline'
   }, {
     file: pkg.module,
     format: 'es',
+    sourcemap: 'inline',
   }, {
     file: pkg.browser,
     format: 'iife',
     name,
+    sourcemap: 'inline',
 
     // https://rollupjs.org/guide/en#output-globals-g-globals
     globals: {},

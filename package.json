@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "description": "Tools for interacting with weighted lexica",
   "main": "dist/lexicon.umd.js",
-  "module": "build/lexicon.js",
+  "module": "dist/lexicon.mjs",
   "browser": "dist/lexicon.iife.js",
+  "jsnext": "build/lexicon.js",
   "types": "build/types/lexicon.d.ts",
   "type": "module",
+  "sideEffects": false,
   "directories": {
     "dist": "dist",
     "doc": "docs",
