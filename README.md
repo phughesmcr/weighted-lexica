@@ -1,1 +1,1 @@
-# JS-Template
+# Weighted Lexica Tools
