@@ -1,11 +1,11 @@
 {
-  "name": "jstemplate",
+  "name": "weighted-lexica",
   "version": "0.1.0",
-  "description": "",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.mjs",
-  "browser": "dist/index.iife.js",
-  "types": "build/types/index.d.ts",
+  "description": "Tools for interacting with weighted lexica",
+  "main": "dist/lexicon.umd.js",
+  "module": "dist/lexicon.mjs",
+  "browser": "dist/lexicon.iife.js",
+  "types": "build/types/lexicon.d.ts",
   "type": "module",
   "directories": {
     "dist": "dist",
@@ -48,9 +48,17 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/phughesmcr/weighted-lexica"
   },
-  "keywords": [],
+  "keywords": [
+    "lexicon",
+    "lexica",
+    "wwbp",
+    "liwc",
+    "text",
+    "analysis",
+    "string"
+  ],
   "author": {
     "name": "Peter Hughes",
     "email": "peter@phugh.es",
@@ -58,7 +66,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/phughesmcr/weighted-lexica/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/phughesmcr/weighted-lexica"
 }

@@ -7,10 +7,10 @@ const extensions = [
   '.js', '.jsx', '.ts', '.tsx',
 ];
 
-const name = pkg.name;
+const name = "Lexica";
 
 export default {
-  input: './src/index.ts',
+  input: './src/lexicon.ts',
 
   // https://rollupjs.org/guide/en#external-e-external
   external: [],

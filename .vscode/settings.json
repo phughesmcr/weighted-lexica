@@ -8,6 +8,7 @@
     "esmodules",
     "iife",
     "jstemplate",
+    "lexica",
     "sourcemap",
     "treeshake",
     "tslib",

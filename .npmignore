@@ -15,3 +15,4 @@ jsconfig.json
 rollup.config.js
 tsconfig.json
 tsconfig.testing.json
+test/scratch.ts
