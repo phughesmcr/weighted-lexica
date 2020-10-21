@@ -1,9 +1,12 @@
 {
   "presets": [
-    "@babel/preset-env",
+    ["@babel/preset-env", {
+      "targets": "defaults",
+      "modules": false
+    }],
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "@babel/plugin-proposal-class-properties"
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ]
 }

@@ -10,6 +10,8 @@
     "dist",
     "docs",
     "node_modules",
-    "test"
+    "test",
+    "rollup.config.dist.js",
+    "rollup.config.build.js"
   ]
 }

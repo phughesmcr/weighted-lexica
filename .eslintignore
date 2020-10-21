@@ -4,4 +4,5 @@ docs/
 node_modules/
 test/
 babel.config.json
-rollup.config.js
+rollup.config.*.js
+test/scratch.js

@@ -1,7 +1,6 @@
 {
   "ignore": [
     "test/mocha.env.js",
-    "test/scratch.ts",
     "test/scratch.js"
   ],
   "require": [

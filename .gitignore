@@ -3,4 +3,4 @@ dist/
 node_modules/
 .env
 package-lock.json
-test/scratch.ts
+test/scratch.js

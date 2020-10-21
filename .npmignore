@@ -12,7 +12,8 @@ docs
 .mocharc.json
 babel.config.json
 jsconfig.json
-rollup.config.js
+rollup.config.dist.js
+rollup.config.build.js
 tsconfig.json
 tsconfig.testing.json
-test/scratch.ts
+test/scratch.js
