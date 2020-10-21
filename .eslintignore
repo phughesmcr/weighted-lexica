@@ -1,0 +1,7 @@
+build/
+dist/
+docs/
+node_modules/
+test/
+babel.config.json
+rollup.config.js

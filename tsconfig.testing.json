@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [],
+    "declaration": false,
+    "noImplicitAny": false,
+    "inlineSourceMap": true,
+  },
+  "include": [
+    "test/**/*.ts"
+  ]
+}
