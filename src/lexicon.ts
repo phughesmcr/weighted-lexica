@@ -42,7 +42,7 @@ export class Lexicon {
    * @param categories 2d array of categories and their associated weights for this term.
    */
   addTerm(term: string, categories?: [Category | string, number][]): Term {
-    if (!this._terms.has(term)) {
+    if (this._terms.has(term)) {
       throw new Error(`Term "${term}" already exists in lexicon "${this.name}". use term.add() to add categories to existing terms.`);
     }
     const t = new Term(term, this);
@@ -65,7 +65,8 @@ export class Lexicon {
   /**
    * Remove a term from the lexicon.
    * @param term The term to remove.
-   * @param category The category to remove the term from. If no category is provided, the term will be removed from all categories.
+   * @param category The category to remove the term from.
+   *    If no category is provided, the term will be removed from all categories.
    */
   removeTerm(term: string, category?: string): void {
     if (this._terms.has(term)) {

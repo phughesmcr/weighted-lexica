@@ -50,9 +50,9 @@ export class Term {
   /** Sets the _isAttached flag. */
   private _checkAttached(): void {
     if (this._categories.size === 0) {
-      this._isAttached = true;
-    } else {
       this._isAttached = false;
+    } else {
+      this._isAttached = true;
     }
   }
 
