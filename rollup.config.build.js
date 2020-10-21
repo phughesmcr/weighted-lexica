@@ -34,6 +34,7 @@ export default {
 
   output: {
     file: "build/lexicon.js",
-    format: "es"
+    format: "es",
+    sourcemap: true,
   },
 };
